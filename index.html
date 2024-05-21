@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="keys">
+                <div class="row">
+                    <button class="operand" onclick="handleClear()">AC</button>
+                    <button class="operand" onclick="handleNegativeClick('')">+/-</button>
+                    <button class="operand" onclick="handlePercentClick('%')">%</button>
+                    <button class="operator" onclick="handleOperatorClick('/')">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="handleNumberClick('7')">7</button>
+                    <button onclick="handleNumberClick('8')">8</button>
+                    <button onclick="handleNumberClick('9')">9</button>
+                    <button class="operator" onclick="handleOperatorClick('*')">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="handleNumberClick('4')">4</button>
+                    <button onclick="handleNumberClick('5')">5</button>
+                    <button onclick="handleNumberClick('6')">6</button>
+                    <button class="operator" onclick="handleOperatorClick('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="handleNumberClick('1')">1</button>
+                    <button onclick="handleNumberClick('2')">2</button>
+                    <button onclick="handleNumberClick('3')">3</button>
+                    <button class="operator" onclick="handleOperatorClick('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="zero" onclick="handleNumberClick('0')">0</button>
+                    <button onclick="handleNumberClick('.')">.</button>
+                    <button class="operator" onclick="handleEqualClick('')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
